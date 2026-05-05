@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sidebar: #0f172a;
+  --color-accent: #5346dc;
+  --color-accent-hover: #4338ca;
+  --color-accent-soft: #eeedfb;
+  --color-surface: #1e293b;
+  --color-surface-2: #334155;
+  --color-border: #2d3748;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --font-display: 'DM Sans', system-ui, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark mode (default) */
+:root {
+  --bg: #0f172a;
+  --bg-sidebar: #0a0f1e;
+  --bg-surface: #1e293b;
+  --bg-surface-2: #273548;
+  --bg-surface-3: #2d3e55;
+  --border-color: #2d3748;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Light mode */
+.light {
+  --bg: #f1f5f9;
+  --bg-sidebar: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f8fafc;
+  --bg-surface-3: #f1f5f9;
+  --border-color: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 99px;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}

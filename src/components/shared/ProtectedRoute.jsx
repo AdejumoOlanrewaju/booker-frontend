@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 import useAuthStore from '../../store/useAuthStore'
-import Sidebar from './Sidebar'
-import TopBar from './TopBar'
+import Sidebar from './Sidebar.jsx'
+import TopBar from './Topbar.jsx'
 
 export default function ProtectedRoute() {
   const { token } = useAuthStore()

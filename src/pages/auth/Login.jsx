@@ -126,7 +126,7 @@ export default function Login() {
             </div>
           </div>
 
-          <p className='text-center text-sm text-[var(--text-muted)]'>
+          <p className='text-center text-sm text-[var(--text-muted)] pt-2'>
             Don't have an account?{' '}
             <Link
               to='/register'

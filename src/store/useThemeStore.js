@@ -9,9 +9,9 @@ const useThemeStore = create(
       initTheme: () => {
         const { isDark } = get()
         if (isDark) {
-          document.documentElement.classList.remove('light')
-        } else {
           document.documentElement.classList.add('light')
+        } else {
+          document.documentElement.classList.remove('light')
         }
       },
 
@@ -19,9 +19,9 @@ const useThemeStore = create(
         const { isDark } = get()
         const newIsDark = !isDark
         if (newIsDark) {
-          document.documentElement.classList.remove('light')
-        } else {
           document.documentElement.classList.add('light')
+        } else {
+          document.documentElement.classList.remove('light')
         }
         set({ isDark: newIsDark })
       },

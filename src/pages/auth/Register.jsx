@@ -49,7 +49,7 @@ export default function Register() {
           </div>
           <h1 className='text-2xl font-semibold text-[var(--text-primary)] 
             tracking-tight'>
-            BookEase
+            Booker
           </h1>
           <p className='text-sm text-[var(--text-muted)] mt-1'>
             Set up your booking system in minutes

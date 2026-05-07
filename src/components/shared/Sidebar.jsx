@@ -45,7 +45,7 @@ export default function Sidebar({ isOpen, onClose }) {
           </div>
           <span className='text-[var(--text-primary)] font-semibold
             text-base tracking-tight'>
-            BookEase
+            Booker
           </span>
         </div>
         {/* Close button — mobile only */}

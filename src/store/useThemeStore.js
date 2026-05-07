@@ -26,7 +26,7 @@ const useThemeStore = create(
         set({ isDark: newIsDark })
       },
     }),
-    { name: 'bookease-theme' }
+    { name: 'booker-theme' }
   )
 )
 

@@ -153,7 +153,7 @@ function Navbar({ business, dark, onToggle, onBook }) {
                 fontSize: 15, fontWeight: 700, letterSpacing: '-0.3px',
                 color: dark ? '#f9fafb' : '#111', lineHeight: 1.2
               }}>
-                {business?.businessName || 'BookEase'}
+                {business?.businessName || 'Booker'}
               </p>
               <p style={{ fontSize: 11, color: dark ? '#4b5563' : '#9ca3af', fontWeight: 500 }}>
                 Online Booking
@@ -878,7 +878,7 @@ function Footer({ business, dark }) {
             <Zap size={11} color='#fff' />
           </div>
           <span style={{ fontSize: 12, fontWeight: 600, color: dark ? '#374151' : '#9ca3af' }}>
-            Powered by BookEase
+            Powered by Booker
           </span>
         </div>
         <p style={{ fontSize: 12, color: dark ? '#1f2937' : '#d1d5db' }}>

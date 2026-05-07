@@ -44,7 +44,7 @@ export default function Login() {
           </div>
           <h1 className='text-2xl font-semibold text-[var(--text-primary)] 
             tracking-tight'>
-            BookEase
+            Booker
           </h1>
           <p className='text-sm text-[var(--text-muted)] mt-1'>
             Business appointment management

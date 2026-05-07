@@ -19,7 +19,7 @@ export default function Bookings() {
   const [loading, setLoading] = useState(true)
   const [statusFilter, setStatusFilter] = useState('all')
   const [globalFilter, setGlobalFilter] = useState('')
-  const [updating, setUpdating] = useState(null)
+  const [updating, setUpdating] = useState({ id: null, action: null })
 
   const fetchBookings = async () => {
     try {
@@ -38,13 +38,13 @@ export default function Bookings() {
 
   const updateStatus = async (id, status) => {
     try {
-      setUpdating(id)
+      setUpdating({ id, action: status })
       await api.put(`/bookings/${id}/status`, { status })
       fetchBookings()
     } catch (err) {
       console.error(err)
     } finally {
-      setUpdating(null)
+      setUpdating({ id: null, action: null })
     }
   }
 
@@ -125,24 +125,33 @@ export default function Bookings() {
         return (
           <div className='flex items-center gap-1 sm:gap-1.5'>
             {status === 'pending' && (
-              <Button size='sm' variant='success'
-                loading={updating === _id}
-                onClick={() => updateStatus(_id, 'confirmed')}>
+              <Button
+                size='sm'
+                variant='success'
+                loading={updating.id === _id && updating.action === 'confirmed'}
+                onClick={() => updateStatus(_id, 'confirmed')}
+              >
                 Confirm
               </Button>
             )}
             {status === 'confirmed' && (
-              <Button size='sm' variant='soft'
-                loading={updating === _id}
-                onClick={() => updateStatus(_id, 'completed')}>
+              <Button
+                size='sm'
+                variant='soft'
+                loading={updating.id === _id && updating.action === 'completed'}
+                onClick={() => updateStatus(_id, 'completed')}
+              >
                 <span className='hidden sm:inline'>Complete</span>
                 <span className='sm:hidden'>Done</span>
               </Button>
             )}
             {(status === 'pending' || status === 'confirmed') && (
-              <Button size='sm' variant='danger'
-                loading={updating === _id}
-                onClick={() => updateStatus(_id, 'cancelled')}>
+              <Button
+                size='sm'
+                variant='danger'
+                loading={updating.id === _id && updating.action === 'cancelled'}
+                onClick={() => updateStatus(_id, 'cancelled')}
+              >
                 <span className='hidden sm:inline'>Cancel</span>
                 <span className='sm:hidden'>✕</span>
               </Button>

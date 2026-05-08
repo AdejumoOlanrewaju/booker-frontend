@@ -134,7 +134,7 @@ function Navbar({ business, dark, onToggle, onBook }) {
         transition: 'all 0.3s ease'
       }}>
         <div style={{
-          maxWidth: 1100, margin: '0 auto', padding: '0 24px',
+          maxWidth: 1200, margin: '0 auto', padding: '0 24px',
           height: 68, display: 'flex', alignItems: 'center',
           justifyContent: 'space-between'
         }}>
@@ -286,7 +286,7 @@ function Hero({ business, services, dark, onBook }) {
           : 'radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 65%)'
       }} />
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px 100px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px 100px' }}>
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 420px',
           gap: 60, alignItems: 'center'
@@ -526,7 +526,7 @@ function ServicesSection({ services, dark, onSelect }) {
       padding: '80px 0',
       borderBottom: `1px solid ${dark ? 'rgba(255,255,255,0.04)' : '#f5f5f5'}`
     }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
 
         {/* Section header */}
         <div style={{ marginBottom: 48 }}>
@@ -669,7 +669,7 @@ function AboutSection({ business, dark }) {
       padding: '80px 0',
       borderBottom: `1px solid ${dark ? 'rgba(255,255,255,0.04)' : 'rgba(99,102,241,0.1)'}`
     }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr',
           gap: 60, alignItems: 'center'
@@ -775,7 +775,7 @@ function ContactSection({ business, dark, onBook }) {
       background: dark ? '#08090f' : '#fff',
       padding: '80px 0'
     }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <div style={{
           borderRadius: 28, overflow: 'hidden', position: 'relative',
           background: 'linear-gradient(135deg, #4f46e5 0%, #6366f1 40%, #7c3aed 100%)',
@@ -865,7 +865,7 @@ function Footer({ business, dark }) {
       padding: '28px 24px'
     }}>
       <div style={{
-        maxWidth: 1100, margin: '0 auto',
+        maxWidth: 1200, margin: '0 auto',
         display: 'flex', alignItems: 'center',
         justifyContent: 'space-between', flexWrap: 'wrap', gap: 12
       }}>

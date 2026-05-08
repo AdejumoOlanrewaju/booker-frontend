@@ -151,7 +151,7 @@ export default function Register() {
             />
 
             <Button
-              type='button'
+              type='submit'
               loading={loading}
               className='w-full mt-1'
               size='lg'

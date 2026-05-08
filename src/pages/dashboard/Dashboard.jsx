@@ -48,7 +48,6 @@ export default function Dashboard() {
           api.get('/bookings/analytics'),
           api.get('/bookings?limit=5')
         ])
-        console.log("Analytics data: ", analyticsRes.data)
         setAnalytics(analyticsRes.data)
         setBookings(bookingsRes.data.slice(0, 5))
       } catch (err) {

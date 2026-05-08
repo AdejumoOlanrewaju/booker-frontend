@@ -111,7 +111,7 @@ export default function Login() {
             />
 
             <Button
-              type='submit'
+              type='button'
               loading={loading}
               className='w-full mt-1'
               size='lg'

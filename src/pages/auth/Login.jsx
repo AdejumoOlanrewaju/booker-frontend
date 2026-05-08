@@ -15,7 +15,8 @@ export default function Login() {
 
   const { register, handleSubmit, formState: { errors } } = useForm()
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data, e) => {
+    e.preventDefault()
     try {
       setLoading(true)
       setError('')
